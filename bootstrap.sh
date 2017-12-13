@@ -34,8 +34,8 @@ apt-get update > /dev/null 2>&1
 
 # Mysql
 echo "Configuring mysql"
-debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password password vagrant' > /dev/null 2>&1
-debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password_again password vagrant' > /dev/null 2>&1
+debconf-set-selections <<< 'mysql-server-5.6 mysql-server/root_password password vagrant' > /dev/null 2>&1
+debconf-set-selections <<< 'mysql-server-5.6 mysql-server/root_password_again password vagrant' > /dev/null 2>&1
 
 apt-get install -y mysql-server > /dev/null 2>&1
 
